@@ -8,9 +8,9 @@
 
 Каждый push в `main` (и каждый PR) собирает debug и release APK в [Actions](https://github.com/Palymer/Hivepatch-Cl/actions).
 
-- Артефакт `hivepatch-apk` у прогона
-- На `main` обновляется prerelease [nightly](https://github.com/Palymer/Hivepatch-Cl/releases/tag/nightly)
-- Тег `v*` (например `v1.0.1`) публикует обычный Release
+- Справа на странице репозитория — [Latest](https://github.com/Palymer/Hivepatch-Cl/releases/latest) (обновляется с каждым push в `main`)
+- Артефакт `hivepatch-apk` у прогона в Actions
+- Тег `v*` (например `v1.0.1`) публикует отдельный Release
 
 Debug APK подписан debug-ключом Android и ставится на устройство. Release без секретов — unsigned. Чтобы подписывать release, задайте в Settings → Secrets:
 

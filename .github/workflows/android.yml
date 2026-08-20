@@ -75,14 +75,14 @@ jobs:
           path: dist/*.apk
           if-no-files-found: error
 
-      - name: Publish nightly
+      - name: Publish latest
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: nightly
-          name: Nightly
-          prerelease: true
-          make_latest: false
+          tag_name: latest
+          name: Latest
+          prerelease: false
+          make_latest: true
           files: dist/*.apk
           body: |
             Automatic build from `${{ github.sha }}` on `main`.
