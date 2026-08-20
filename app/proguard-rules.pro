@@ -1,0 +1,2 @@
+-keep class libv2ray.** { *; }
+-dontwarn libv2ray.**
